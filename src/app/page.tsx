@@ -13,8 +13,6 @@ export default function Home() {
   const chooseGif = () => {
     const math = Math.floor(Math.random() * 10);
 
-    console.log("math", math);
-
     if (math % 2 === 0) {
       return "bg-[url('../../public/flake.gif')]";
     }
