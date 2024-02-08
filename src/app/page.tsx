@@ -10,6 +10,16 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
+  const chooseGif = () => {
+    const math = Math.floor(Math.random() * 10);
+
+    if (math % 2 === 0) {
+      return "bg-[url('../../public/flake.gif')]";
+    }
+
+    return "bg-[url('../../public/wave.gif')]";
+  };
+
   return (
     <>
       <div className="flex justify-center w-full pb-36">
@@ -19,14 +29,18 @@ export default function Home() {
           </div>
           <div className="flex w-full items-center lg:flex-row flex-col gap-5 justify-between mt-16">
             <div className="flex flex-col gap-2">
-              <h1 className="lg:text-6xl text-4xl font-bold">Gustavo Gotha</h1>
-              <h3 className="text-2xl">Software Engineer</h3>
+              <h1 className="lg:text-6xl text-center lg:text-start text-4xl font-bold">
+                Gustavo Gotha
+              </h1>
+              <h3 className="text-2xl text-center lg:text-start">
+                Software Engineer
+              </h3>
 
               <div className="w-full lg:w-2/4 flex flex-col mt-5 gap-5">
-                <p className="text-1xl text-zinc-400">
+                <p className="text-1xl text-zinc-400 text-center lg:text-start">
                   Software engineer with a passion for web development.
                 </p>
-                <p className="text-zinc-400">
+                <p className="text-zinc-400 text-center lg:text-start">
                   I'm also a tech enthusiast and a lifelong learner. I love
                   learning new technologies and sharing knowledge with others.
                 </p>
@@ -47,13 +61,16 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="bg-zinc-900 rounded-xl">
+            <div
+              id="background-me"
+              className={`${chooseGif()} rounded-3xl border-zinc-900 border-2`}
+            >
               <Image
                 src="/me.png"
                 alt="logo"
                 width="500"
                 height="500"
-                className="hover:cursor-pointer hover:transition-opacity hover:opacity-30"
+                className="hover:cursor-pointer hover:transition-opacity hover:opacity-90"
               />
             </div>
           </div>
