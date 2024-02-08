@@ -70,9 +70,18 @@ export function Appbar() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="#" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Home
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <Link href="/setup" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Setup
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
