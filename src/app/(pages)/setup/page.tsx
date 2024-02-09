@@ -17,20 +17,22 @@ export default function Setup() {
           </div>
           <div className="flex justify-center items-start w-full flex-col gap-8">
             <h1 className="text-4xl font-bold text-start">💻 Setup</h1>
-            <p className="w-[700px]">
+            <p className="w-[300px] md:w-full">
               As a developer, I really like to buy new hardwares such as
               keyboard, mouse, a new laptop, microphones, headseats. I use a lot
               of tools and software to make my life easier.
             </p>
-            <p className="w-[700px]">
+            <p className="w-[300px] md:w-full">
               Everytime when I saw something new I go on the internet and search
               for reviews and unboxings. So, no more talking, let's see my
               setup:
             </p>
 
-            <Image src="/setup.jpeg" alt="setup" width="700" height="400" />
+            <div className="border w-full">
+              <Image src="/setup.jpeg" alt="setup" width="1000" height="400" />
+            </div>
 
-            <p className="w-[700px]">
+            <p className="w-[300px] md:w-full">
               Basically, this is my setup. I want to improve it more and more.
               As you can see the setup has a lot of cables, I'm trying to make
               it more clean.
@@ -88,7 +90,7 @@ export default function Setup() {
                   )
                 }
               >
-                AOC Agon 27" AG251FZ2 - 1920x1080 - 240Hz - Monitor
+                AOC Agon 27" AG251FZ2 - 240Hz - Monitor
               </Button>
               <Button
                 variant="link"
@@ -98,7 +100,7 @@ export default function Setup() {
                   )
                 }
               >
-                2x Samsung 24" - 1920x1080 - 60Hz - Monitor
+                2x Samsung 24" - 60Hz - Monitor
               </Button>
               <Button
                 variant="link"

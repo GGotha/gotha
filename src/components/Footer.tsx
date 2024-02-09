@@ -4,7 +4,7 @@ import { social_media } from "@/constants/constant";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-center items-center py-10 gap-5">
+    <div className="flex flex-row justify-center items-center py-10 gap-5 border-zinc-700 border-t-[1px]">
       <div onClick={() => window.open(social_media.twitter)}>
         <Twitter
           fill="white"

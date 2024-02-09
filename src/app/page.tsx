@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex justify-center w-full pb-36">
+      <div className="flex justify-center w-full pb-36 border-zinc-700 border-b-[1px]">
         <div className="lg:w-2/4 w-3/4 flex flex-col items-center">
           <div className="w-full">
             <Appbar />
