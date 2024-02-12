@@ -28,8 +28,8 @@ export default function Setup() {
               setup:
             </p>
 
-            <div className="border w-full">
-              <Image src="/setup.jpeg" alt="setup" width="1000" height="400" />
+            <div className="w-full">
+              <Image src="/setup.jpeg" alt="setup" width={1000} height={500} />
             </div>
 
             <p className="w-[300px] md:w-full">
